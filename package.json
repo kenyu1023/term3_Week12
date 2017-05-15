@@ -1,0 +1,27 @@
+{
+    "name": "Kenyu-Week12",
+    "version": "1.0.0",
+    "description": "Week12",
+    "main": "index.js",
+    "scripts": {
+        "scss": "node-sass scss/main.scss -o css",
+        "autoprefixer": "postcss -u autoprefixer -r css/*",
+        "serve": "browser-sync start --proxy localhost/Kenyu_Week12/public_html --files css/*.css, js/*.js, *.html, *.php, partials/*.php --browser Chrome",
+        "buildcss": "npm run scss && npm run autoprefixer",
+        "watchcss": "onchange \"scss\" -- npm run buildcss",
+        "watchall": "npm-run-all -p serve watchcss"
+    },
+    "author": "Kenyu Sakuraba",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^6.7.2",
+        "browser-sync": "^2.18.7",
+        "node-sass": "^4.5.0",
+        "npm-run-all": "^4.0.1",
+        "onchange": "^3.2.1"
+    },
+    "dependencies": {
+        "foundation-sites": "^6.3.0",
+        "uuid": "^3.0.1"
+    }
+}
