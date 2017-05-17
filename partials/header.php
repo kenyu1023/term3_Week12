@@ -25,6 +25,7 @@
                     <li><a href="index.php" class="nav-a">Home</a></li>
                     <li><a href="works.php" class="nav-a">Books</a></li>
                     <li><a href="#" class="nav-a">Test 1</a></li>
+                    <li><a href="blog.php" class="nav-a">Blog</a></li>
                     <a href="gallery.php" class="nav-a"><li>Gallery</a></li>
                     <li><a href="contact.php" class="nav-a">Contact</a></li>
                     <a href="#" class="closeBtn" id="closeBtn">&times;</a>

@@ -14,7 +14,7 @@
     justify-content: center;
     
     .page-top-title {
-        font-size: 1.2em;
+        font-size: 5em;
         align-items: center;
 
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -54,9 +54,7 @@
 .about {
     padding:50px 30px;
     height:100vh;
-    display: flex;
     align-items: center;
-    flex-direction: column;
     
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
