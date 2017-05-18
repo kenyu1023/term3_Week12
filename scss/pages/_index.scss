@@ -14,7 +14,7 @@
     justify-content: center;
     
     .page-top-title {
-        font-size: 5em;
+        font-size: 1em;
         align-items: center;
 
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -59,6 +59,29 @@
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
         position: relative;
+        
+    }
+    
+    .about-left-box {
+        position:absolute;
+        background-color: #E0E0E0;
+        opacity:0.8;
+        height:90%;
+        width:30%;
+        left:10%;
+        top:-5%;
+        z-index: -10;
+    }
+    
+    .about-right-box {
+        position:absolute;
+        background-color: #e5e5e5;
+        opacity:0.8;
+        height:40%;
+        width:30%;
+        right:5%;
+        bottom:-10%;
+        z-index: 10;
     }
     
     img {
@@ -106,7 +129,7 @@
             /* styles for large and onward only */
             width:60%;
             margin: 0 auto;
-            padding:100px 50px;
+            padding:150px;
             background-color: antiquewhite;
         }
         
@@ -204,6 +227,62 @@
 ///////////////////////////////////////
 
 ///////// blog section ////////////
+.contact {
+    padding: 50px 30px;
+    background-image:url(../img/blog-white.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width:30%;
+        display: block;
+        margin: auto;
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        padding:100px 50px;
+
+    }
+
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        padding:100px 50px;
+        position:relative;
+
+    }
+    .contact-para {
+        align-items : center;
+
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width:80%;
+            margin: auto;
+        }
+
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width:60%;
+            margin: 100px auto;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+    }
+}
+
+
+/////////////////////////////////// 
+
+///// contact section //////////
+
 .blog {
     padding: 50px 30px;
     background-image:url(../img/blog-white.jpg);
@@ -255,5 +334,4 @@
     }
 }
 
-
-///////////////////////////////////
+////////////////////////////////
