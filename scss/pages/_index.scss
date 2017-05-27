@@ -2,197 +2,306 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 ////// index page top section //////
-
 .page-top {
-    background-image: url(../img/img1.jpeg);
-    background-position: center;
-    background-size: cover;
-    height:100vh;
-    width:100%;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    .page-top-title {
-        font-size: 5em;
-        align-items: center;
+    @media screen and (max-width: 39.9375em) {
+        /* styles for small only */
 
+        background-image: url(../img/works-man-back.jpeg);
+        background-position: center;
+        background-size: cover;
+        
+       
+    }
+    
+    .page-top-greeting {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        z-index: 10;
+        opacity: 0.6;
+        font-size: 11vw;
+
+    }
+
+    
+//    .page-top-for-title {
+//        background-image: url("../img/about-man.jpeg");
+//        background-position: center;
+//        background-size: cover;
+//        width:100%;
+//        height:100vh;
+//    }
+    
+    video {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        min-width: 60%;
+        min-height: 60%;
+        width:auto;
+        height:auto;
+        margin:50px 0;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            min-width: 30%;
+            min-height: 30%;
+        }
+        
+     
+
+    }
+    .page-top-title {
+        font-size: 1em;
+        align-items: center;
+        text-align: center;
+        z-index: 100;
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
             /* styles for medium only */
             font-size: 3em;
         }
-
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
-            font-size: 5em;
+            font-size: 4em;
         }
     }
 }
 
 //////////////////////////////////////
-
 //////// index about section /////////
-
 .about-intro {
-    padding:30px;
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
-        padding:50px;
+        padding: 50px;
         margin: auto;
     }
-
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
-        padding:80px;
-        margin: auto;
-        width:80%;
+        padding: 80px;
+        margin: 100px auto;
+        width: 80%;
     }
     
-
+    
+    .about-intro-para {
+        text-align: center;
+        padding: 50px 20px;
+        
+        h3 {
+            color: red;
+        }
+    }
 }
 
 .about {
-    padding:50px 30px;
-    height:100vh;
+    padding: 50px 30px;
     align-items: center;
-    
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
         position: relative;
-    }
-    
-    img {
-        width:50%;
-        padding-bottom:40px;
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .about-img {
-        
-        @media screen and (min-width: 64em) {
-            /* styles for large and onward only */
-            position: absolute;
-            padding-bottom:0;
-        }
-    }
-    .about-img-left {
-        width:25%;
-    }
-    
-    .about-img-right-top {
-        width:20%;
-        right:8%;
-        top:0;
-    }
-    
-    .about-img-right-bottom {
-        width:15%;
-        right:5%;
-        top:60%;
-        z-index: 30;
-    }
-    
-    
-    .about-desc {
+        margin:100px 0;
         
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
             /* styles for medium only */
-            width:80%;
-            margin:0 auto;
         }
 
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
-            width:60%;
-            margin: 0 auto;
-            padding:100px 50px;
-            background-color: antiquewhite;
+            height:100vh;
         }
+    }
+    .about-box1 {
+        position: absolute;
+        width: 30vw;
+        height: 20vw;
+        top: -20%;
+        left: 40%;
+        background-color: lightgray;
+        z-index: -10;
+    }
+    .about-box2 {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        top: 30%;
+        left: 5%;
+        background-color: lightgray;
+    }
+    img {
+        width: 50vw;
+        padding-bottom: 40px;
+        display: block;
+        margin: 0 auto;
         
-        h3 {
-            text-align: center;
+    }
+    .about-img {
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            position: absolute;
+            padding-bottom: 0;
         }
-        h5 {
-            text-align: center;
+    }
+    .about-img-left {
+        width: 100vw;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width: 40vw;
+        }
+
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width: 50vw;
+            box-shadow: 5px 5px 5px #888888;
+        }
+    }
+    .about-img-right-top {
+        width: 20%;
+        left: 30%;
+        top: 0;
+    }
+    .about-img-right-bottom {
+        width: 15%;
+        left: 5%;
+        top: 60%;
+        z-index: 30;
+    }
+    .about-desc {
+        width:80%;
+        @media screen and (max-width: 39.9375em) {
+            /* styles for small only */
+            margin: auto;
+        }
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width: 70%;
+            margin: auto;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width: 60%;
+            margin-left: auto;
+            padding: 0 50px 100px 50px;
+            
+        }
+        .about-desc-para {
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */  
+                margin-left: auto;
+                //margin-right: 10%;
+                margin-top:20%;
+                padding:50px;
+                width: 40vw;
+                background-color:white;
+                box-shadow: 5px 5px 5px #888888;
+            }
+            p {
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                }
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    padding: 0 50px;
+                    
+                }
+            }
+            h2 {
+                text-align: center;
+            }
+            h5 {
+                text-align: center;
+            }
         }
     }
 }
 
 ////////////////////////////////////////
-
 /////// index portfolio section ////////
-
 .portfolio {
     padding: 50px 30px;
-    background-image:url(../img/port-back-black.jpg);
-    background-position: center;
-    background-size: cover;
-    color : white;
-    height:100vh;
+    height:100%;
+    
+    //    background-image:url(../img/port-back-black.jpg);
+    //    background-position: center;
+    //    background-size: cover;
+    //    color : white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
-        padding:100px 50px;
-
+        padding: 100px 50px;
     }
-
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
-        padding:200px 50px;
+        margin: 200px 50px;
         position: relative;
-
+        height:100vh;
     }
-    
     img {
-        width:30%;
+        width: 30%;
         display: block;
         margin: auto;
-    
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        /* styles for medium only */
-
-    }
-
-    @media screen and (min-width: 64em) {
-        /* styles for large and onward only */
-        position:relative;
-        
-    }
-}
-    
-    .port-left-img {
-        position:absolute;
-        width:25%;
-        left: 0;
-    }
-    
-    .port-left-img2 {
-        position:absolute;
-        width:25%;
-        right: 0;
-        top:50%;
-        transform: translateY(-50%);
-    }
-    
-    .portfolio-para {
-        
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
             /* styles for medium only */
-            width:80%;
-            margin: auto;
         }
-
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
-            width:60%;
-            margin: 0 auto;
+            position: relative;
         }
     }
-    
+    .port-left-img {
+        position: absolute;
+        width: 40vw;
+        right: 20vw;
+        bottom: 5vw;
+        z-index: -10;
+    }
+    .port-left-img2 {
+        position: absolute;
+        width: 30vw;
+        right: 0;
+        bottom: 0;
+    }
+    .port-left-img3 {
+        position: absolute;
+        width: 50vw;
+        right: 0;
+        top: 0;
+    }
+    .portfolio-para {
+        width:80%;
+        margin: auto; 
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width: 80%;
+            margin: auto;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width: 40vw;
+            padding:50px;
+            margin-right: auto;
+            margin-left: 1%;
+            margin-top:23%;
+            background-color: white;
+            box-shadow: 5px 5px 5px #888888;
+        }
+    }
     h3 {
         text-align: center;
     }
@@ -202,51 +311,124 @@
 }
 
 ///////////////////////////////////////
-
 ///////// blog section ////////////
 .blog {
     padding: 50px 30px;
-    background-image:url(../img/blog-white.jpg);
+    background-image: url(../img/vancouver-blog.jpg);
     background-position: center;
     background-size: cover;
-    height:100vh;
+    background-attachment: fixed;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    position: relative;
     img {
-        width:30%;
+        width: 30%;
         display: block;
         margin: auto;
     }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
-        padding:100px 50px;
-
+        padding: 100px 50px;
     }
-
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
-        padding:100px 50px;
-        position:relative;
-
+        padding: 200px 50px;
+        margin: 200px 0;
+        
     }
     .blog-para {
-        align-items : center;
-
+        width:80%;
+        margin: auto;
+        color: white;
+        //background-color: lightgray;
         @media screen and (min-width: 40em) and (max-width: 63.9375em) {
             /* styles for medium only */
-            width:80%;
+            width: 80%;
             margin: auto;
         }
-
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
-            width:60%;
+            width: 40%;
             margin: 100px auto;
+            padding:50px;
+        }
+        h3 {
+            text-align: center;
+        }
+        h5 {
+            text-align: center;
         }
     }
+}
 
+
+///////////////////////////////////
+///// contact section ////////
+.contact-fadeIn {
+    background-image: url(../img/works-man-back.jpeg);
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+
+
+.home-contact {
+    padding: 50px 30px;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    @media screen and (max-width: 39.9375em) {
+        /* styles for small only */
+        flex-direction: column;
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        flex-direction: column;
+    }
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        padding:250px 50px;
+        margin-top: 200px;
+    }
+    img {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+    }
+    .contact-para {
+        width:80%;
+        margin:0 auto; 
+        background-color: white;
+        padding:30px;
+        opacity: 0.9;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width: 80%;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width:80%;
+            margin: 0 auto;
+            //margin: 100px auto;
+            padding:50px;
+        }
+        p {
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                width:50%;
+                margin:auto;
+            }
+        }
+    }
     h3 {
         text-align: center;
     }
@@ -254,6 +436,7 @@
         text-align: center;
     }
 }
+}
 
 
-///////////////////////////////////
+

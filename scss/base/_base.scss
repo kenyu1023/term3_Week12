@@ -94,8 +94,9 @@ textarea {
  * Basic styles for links
  */
 a {
-    color: $brand-color;
+    color: red;
     text-decoration: none;
+    margin:10px 0;
 
     @include on-event {
         color: $text-color;

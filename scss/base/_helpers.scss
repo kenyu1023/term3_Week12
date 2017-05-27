@@ -82,6 +82,10 @@
 .invisible {
     visibility: hidden; }
 
+.relative {
+    position: relative;
+}
+
 @media screen and (max-width: 39.9375em) {
     .hide-for-small-only {
         display: none !important; } }

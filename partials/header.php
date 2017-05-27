@@ -11,22 +11,22 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.barCharts.css">
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Arbutus+Slab|Cousine|Cuprum|Merriweather+Sans|Patua+One|Roboto+Condensed|Share+Tech+Mono|Teko" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One|Karla:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src="https://use.fontawesome.com/5ece829bcf.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <body>
 
             <div class="openNav" id="openNav">&#9776</div>
             <div class="nav">
                 <ul class="page-nav" id="sideNav">
                     <li><a href="index.php" class="nav-a">Home</a></li>
-                    <li><a href="works.php" class="nav-a">Books</a></li>
-                    <li><a href="#" class="nav-a">Test 1</a></li>
-                    <li><a href="blog.php" class="nav-a">Blog</a></li>
-                    <a href="gallery.php" class="nav-a"><li>Gallery</a></li>
+                    <li><a href="about.php" class="nav-a">About</a></li>
+                    <li><a href="portfolio.php" class="nav-a">Portfolio</a></li>
+                    <li><a href="blog.php" class="nav-a">blog</a></li>
                     <li><a href="contact.php" class="nav-a">Contact</a></li>
                     <a href="#" class="closeBtn" id="closeBtn">&times;</a>
                 </ul>

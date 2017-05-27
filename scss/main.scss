@@ -30,7 +30,14 @@
 
 // 6. Page-specific styles
 @import
-  'pages/index';
+  'pages/index',
+  'pages/portfolio',
+  'pages/contact',
+  'pages/about',
+  'pages/login',
+  'pages/user-page',
+  'pages/blog',
+  'pages/blog-detail';
 
 // 7. Themes
 //@import
