@@ -1,0 +1,64 @@
+.login {
+    width: 70%;
+    height: 100%;
+    padding:50px;
+    margin: auto;
+    background-color: lightgray;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        display: flex;
+        justify-content: center;
+    }
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        display: flex;
+        justify-content: center;
+    }
+    form {
+        padding: 20px 0;
+        font-size: 0.7em;
+        width: 100%;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            font-size: 1em;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            font-size: 1.5em;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin: 5px 0;
+            width: 100%;
+            border: none;
+            background-color: black;
+            color: white;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                padding: 10px;
+                margin: 10px 0;
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding: 10px;
+                margin: 15px 0;
+            }
+        }
+        input[type="submit"] {
+            border: 1px solid white;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                border: 2px solid white;
+                padding: 10px;
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                border: 2px solid white;
+                padding: 20px;
+            }
+        }
+    }
+}

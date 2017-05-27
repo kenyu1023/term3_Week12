@@ -1,12 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-
 .openNav {
-    position:fixed;
-    color:black;
-    font-size:2em;
-    padding-left:10px;
+    position: fixed;
+    color: black;
+    font-size: 2em;
+    padding-left: 10px;
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
         font-size: 4em;
@@ -16,145 +15,133 @@
     top:0;
 }
 
-.web-title {
-
-}
-
 .main {
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     .openNav {
         position: fixed;
     }
 }
+
 .nav {
     overflow: auto;
-    
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
     }
-
     @media screen and (min-width: 64em) {
         /* styles for large and onward only */
         display: flex;
         align-content: center;
     }
-
-.page-nav {
-    
-    height: 100%;
-    width:0;
-    position:fixed;
-    z-index: 20;
-    padding:50px 0;
-    background-color:grey;
-    margin:0;
-    overflow:hidden;
-    
-    
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        /* styles for medium only */
-        padding:200px 0 100px 0;
-    }
-
-    @media screen and (min-width: 64em) {
-        /* styles for large and onward only */
-        display: flex;
-        align-content: center;
-        padding:0;
-    }
-
-
-    .closeBtn {
-        color:white;
+    .page-nav {
+        height: 100%;
+        width: 40%;
+        position: fixed;
+        z-index: 20;
+        padding: 50px 0;
+        background-color: white;
+        overflow: hidden;
         display: flex;
         justify-content: center;
-        text-decoration: none;
-        font-size:3em;
-        cursor: pointer;
-        @media screen and (min-width: 64em) {
-            /* styles for large and onward only */
-            padding:0 30px;
-            background-color: brown;
-            height:100vh;
-            align-items: center;
+        align-content: center;
+        flex-direction: column;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            padding: 50px 0 100px 0;
+            width: 40%;
         }
-    }
-
-    li {
-        flex:1;
-        align-items: center;
-        justify-content:censter;
-        list-style:none;
-        width:100%;
-        text-align:center;
-        padding:20px 0;
-        transition:all 0.5s ease;
-        
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
+            padding: 50px 0 100px 0;
+        }
+        .closeBtn {
+            color: black;
             display: flex;
-            align-items: center;
             justify-content: center;
-        }
-        
-        &:nth-child(1){
-            @media screen and (min-width: 64em) {
-                /* styles for large and onward only */
-                background-color: aqua;
-            }
-        }
-        &:nth-child(2){
-            @media screen and (min-width: 64em) {
-                /* styles for large and onward only */
-                background-color: white;
-            }
-        }
-        &:nth-child(3){
-            @media screen and (min-width: 64em) {
-                /* styles for large and onward only */
-                background-color:beige;
-            }
-        }
-        &:nth-child(4){
-            @media screen and (min-width: 64em) {
-                /* styles for large and onward only */
-                background-color: yellow;
-            }
-        }
-        &:nth-child(5){
-            @media screen and (min-width: 64em) {
-                /* styles for large and onward only */
-                background-color: greenyellow;
-            }
-        }
-        
-
-        &:hover {
-            background-color: #3ed343;
-        }
-        
-
-
-        .nav-a {
-            font-family: 'Source Sans Pro', sans-serif;
-            color:white;
-            padding:10px;
             text-decoration: none;
-            font-size:1.2em;
-            
-            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-                /* styles for medium only */
-                font-size:2em;
-            }
-
+            font-size: 3em;
+            cursor: pointer;
             @media screen and (min-width: 64em) {
                 /* styles for large and onward only */
-                font-size:3em;
+                padding: 0 30px;
+                align-items: center;
+            }
+        }
+        li {
+//            
+//            align-items: center;
+//            justify-content: censter;
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color:red;
+            }
+            &:hover a{
+               color:white;
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+//                display: flex;
+//                align-items: center;
+//                justify-content: center;
+            }
+            //        .hoverNav {
+            //            display: none;
+            //            position:absolute;
+            //            left: 0;
+            //            bottom:0;
+            //        }
+            //        &:nth-child(1){
+            //            @media screen and (min-width: 64em) {
+            //                /* styles for large and onward only */
+            //                background-color: aqua;
+            //            }
+            //        }
+            //        &:nth-child(2){
+            //            @media screen and (min-width: 64em) {
+            //                /* styles for large and onward only */
+            //                background-color: white;
+            //            }
+            //        }
+            //        &:nth-child(3){
+            //            @media screen and (min-width: 64em) {
+            //                /* styles for large and onward only */
+            //                background-color:beige;
+            //            }
+            //        }
+            //        &:nth-child(4){
+            //            @media screen and (min-width: 64em) {
+            //                /* styles for large and onward only */
+            //                background-color: yellow;
+            //            }
+            //        }
+            //        &:nth-child(5){
+            //            @media screen and (min-width: 64em) {
+            //                /* styles for large and onward only */
+            //                background-color: greenyellow;
+            //            }
+            //        }
+           
+            .nav-a {
+                font-family: 'Roboto Condensed', sans-serif;
+                color: black;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 0.8em;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    font-size: 1.2em;
+                }
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    font-size: 1.5em;
+                }
             }
         }
     }
-}
 }

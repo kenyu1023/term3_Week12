@@ -1,0 +1,193 @@
+.portfolio-main {
+    width: 100%;
+    overflow: auto;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        /* styles for medium only */
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 64em) {
+        /* styles for large and onward only */
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        width:80%;
+        margin: auto;
+    }
+    h2 {
+        padding: 100px 10px;
+        width: 100%;
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            font-size: 5em;
+            text-align: center;
+        }
+    }
+    .demo {
+        background-image: url("..img/img1.jpeg");
+        background-position: center;
+        background-size: cover;
+        width: 80%;
+        height: 50%;
+        margin: auto;
+    }
+    .portfolio-page {
+        transition: all 0.5s ease;
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+            width: 33.33%;
+        }
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width: 33.33%;
+            
+        } 
+
+        
+        .each-work-overlay {
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+//                position: absolute;
+//                top: 100%;
+//                left: 100%;
+//                opacity: 0;
+            }
+            .each-works {
+                padding: 30px 10px;
+                margin: 20px;
+                border: 1px solid lightgray;
+                position: relative;
+                
+                &:hover .each-work-overlay {
+                    opacity: 1;
+                }
+                
+                .works-img {
+                    width: 40%;
+                    margin: auto;
+                    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                        /* styles for medium only */
+                        width: 50%;
+                    }
+                    @media screen and (min-width: 64em) {
+                        /* styles for large and onward only */
+                        width: 50%;
+                    }
+                }
+                h4 {
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .modalbox-style {
+        display: none;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        overflow: auto;
+        .modalbox-info-style {
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: auto;
+            text-align: center;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                text-align: center;
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                text-align: center;
+            }
+            #portImg {
+                width: 30%;
+                margin: 20px auto;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    margin: 50px auto;
+                }
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    margin: 50px auto;
+                    width:30%;
+                }
+            }
+            .works-para {
+                padding: 20px;
+                width: 100%;
+                h4 {
+                    padding: 10px;
+                    font-size: 3em;
+                    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                        /* styles for medium only */
+                        font-size: 3em
+                    }
+                    @media screen and (min-width: 64em) {
+                        /* styles for large and onward only */
+                        font-size: 5em
+                    }
+                }
+                //        h4 {
+                //            padding:10px;
+                //            font-size: 1.5em;
+                //            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                //                /* styles for medium only */
+                //                font-size: 2em
+                //            }
+                //
+                //            @media screen and (min-width: 64em) {
+                //                /* styles for large and onward only */
+                //                font-size: 3em
+                //            }
+                //        }
+                p {
+                    padding-top: 20px;
+                    padding-left: 25px;
+                    width: 90%;
+                    line-height: 1.2;
+                    text-align: left;
+                    margin: auto;
+                    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                        /* styles for medium only */
+                        padding-top: 30px;
+                        padding-left: 50px;
+                        font-size: 1.5em;
+                        width: 90%;
+                        line-height: 1.2;
+                        text-align: left;
+                        margin: auto;
+                    }
+                    @media screen and (min-width: 64em) {
+                        /* styles for large and onward only */
+                        padding-top: 30px;
+                        padding-left: 70px;
+                        width: 60%;
+                        line-height: 1.2;
+                        text-align: left;
+                        margin: auto;
+                    }
+                }
+            }
+            #closeModal {
+                font-size: 3em;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

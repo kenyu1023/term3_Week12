@@ -1,67 +1,40 @@
-<script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
-   <div class='admin-blog-style'>
-    <h1>ADMIN BLOG PAGE</h1>
+<?php include "partials/header.php"; ?>
+<div class="blog-main">
+<h3>My Blog</h3>
+<?php
 
+include "db.php";
+if (!db_connect()) {
+    echo"<p>Connection Failed</p>";
+} 
+else {
+
+    $query = "SELECT * FROM blog_tb ORDER BY id desc";
+    $queryResult = mysqli_query(db_connect(), $query);
+    $numberOfRows = mysqli_num_rows($queryResult);
+    if ($numberOfRows > 0) {
+        while ($row = mysqli_fetch_assoc($queryResult)){
             
-            <?php 
-                if(isset($_GET['update'])){
-                   $config=parse_ini_file("config.ini");
-                   $conn=mysqli_connect('localhost',$config["username"],$config["password"],$config["database"]);
-                   if(!$conn){
-                       echo "connection failed : ".mysqli_connect_error();
-                   }else{
-                       $query = "SELECT * FROM blog_tb WHERE id=".$_GET["id"];
-
-
-                       $result = mysqli_query($conn,$query);
-                       while($data = mysqli_fetch_assoc($result)){
-                           $uptitle=$data["title"];
-                           $upcontent=$data["content"];
-                       }
-                      
-                       mysqli_close($conn);
-                    }
-                }
-        
-            ?>
-            
-            <h2>New Blog</h2>
-            <form action="blog-process.php" method="POST">
-                <input id="updateBlog" type="hidden" value="<?php if(isset($_GET['update'])){ echo $_GET['id']; }else{ echo "0"; } ?>" name="update">
-                <div class="clearfix">
-                    <div class="small-12 medium-12 large-12 column text-center">
-                        <h4>Title</h4>
-                    </div>
-                    <div class="small-12 medium-12 large-12 column">
-                        <input ng-model="title" class="text-center" name="title" type="text"
-                               value="<?php if(isset($_GET['update'])){echo $uptitle;} ?>">
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="small-12 medium-12 large-12 column text-center">
-                        <h4>Content</h4>
-                    </div>
-                    <div class="small-12 medium-12 large-12 column remove-padding">
-                        <textarea id="blogContent" name="blogeditor"><?php if(isset($_GET['update'])){echo $upcontent;} ?></textarea>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="small-12 medium-12 large-12 column text-center">
-                        <input type="submit" value="POST!"><a ng-click="yosAppVar.closeBodalBox()">CLOSE</a>
-                    </div>
-                </div>
-            </form>
-    <script>
-        var bloged = CKEDITOR.replace( 'blogeditor',{
-            resize_enabled: 'false',
-            removePlugins: 'elementspath',
-            filebrowserUploadUrl: '/term3_Week12/upload.php',
-            image_previewText : CKEDITOR.tools.repeat( 'Select Image', 1 ),
-            toolbar: [
-                [ 'Image','Bold', 'Italic', '-', 'NumberedList','BulletedList', '-', 'Link', 'Unlink' ]
-            ]
-        });
-
-    </script>
-
-</div>	
+            $id = $row["id"];
+            $date = $row["date"];
+            $title = $row["title"];
+            $content = $row["content"];
+            echo "<div class='blog-page'>";
+            echo "<div class='blog-post'>";
+            echo"<div class='each-post'>";
+            echo "<h5>" . $date . "</h5>"; 
+            echo "<h4>" . $title . "</h4>";
+//            echo "<p>" . $content . "</p>";
+            echo "<a href='blog-detail.php?id=" . $id . "'>Read More</a>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+            }
+        }
+        else{
+            echo "<p>There's no contents</p>";
+        }
+}
+?>
+</div>
+<?php include "partials/footer.php"; ?>

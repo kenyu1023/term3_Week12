@@ -1,0 +1,60 @@
+    .blog-main {
+        
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+            /* styles for medium only */
+        }
+
+        @media screen and (min-width: 64em) {
+            /* styles for large and onward only */
+            width:80%;
+            margin:auto;
+        }
+        h3 {
+            text-align: center;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+            }
+
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                margin:50px 0;
+            }
+            
+        }
+    .blog-page {
+        .blog-post {
+            overflow: auto;
+            width: 70%;
+            height: 50%;
+            margin: 20px auto;
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                /* styles for medium only */
+                width: 80%;
+            }
+            @media screen and (min-width: 64em) {
+                /* styles for large and onward only */
+                padding: 20px;
+                width: 50%;
+                height: 50%;
+                float: left;
+            }
+            .each-post {
+                padding: 30px 10px;
+                text-align: center;
+                border: 1px solid black;
+                @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+                    /* styles for medium only */
+                    width: 80%;
+                    margin: 30px auto;
+                    padding: 30px;
+                }
+                @media screen and (min-width: 64em) {
+                    /* styles for large and onward only */
+                    //            margin: 30px 10px;
+                    width: 100%;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}
