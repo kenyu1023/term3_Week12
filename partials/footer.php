@@ -1,7 +1,5 @@
         <footer class="page-footer">
-            <div class="footer-content">
-                <h1>Satoshi Takazawa</h1>
-            </div>
+            
         </footer>
         
 

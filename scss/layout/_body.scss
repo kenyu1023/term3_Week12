@@ -113,13 +113,13 @@ h5 {
         font-size: 15vw;
         text-align: center;
         position:absolute;
-        right:5%;
-        top:-20%;
+        right:5vw;
+        top:-20vw;
+        z-index: 20;
     }
 }
 
 .myWorks {
-    
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
     }
@@ -128,8 +128,8 @@ h5 {
         /* styles for large and onward only */
         font-size: 15vw;
         position:absolute;
-        left:0;
-        top:0;
+        left:5vw;
+        top:-40vw;
     }
 }
 
@@ -139,7 +139,7 @@ h5 {
     position:absolute;
     opacity: 0.7;
     right:0;
-    bottom:-7vw;
+    bottom:20vw;
     
     font-family: 'Roboto Condensed', sans-serif;
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -228,6 +228,7 @@ p {
 ul {
     margin:0;
     padding:0;
+    list-style: none;
 }
 
 .animation {
@@ -262,6 +263,56 @@ ul {
     padding:10px !important;
 }
  
+// index page-top ////
+#box1 {
+    position: absolute;
+    top:20%;
+    right: 20%;
+    font-size: 10vw;
+}
+
+#boxA {
+    position: absolute;
+    width:20vw;
+    height:20vw;
+    top:30vw;
+    left:10vw;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#boxA-2 {
+    position: absolute;
+    width:20vw;
+    height:20vw;
+    top:0;
+    right:5vw;
+    background-color: red;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+//#boxA-3 {
+//    position: absolute;
+//    width:20vw;
+//    height:20vw;
+//    top:-10vw;
+//    left:-30vw;
+//    background-color: lightgray;
+//    
+//}
+
+#textA {
+    position: absolute;
+    top:0;
+    left: 40%;
+}
+
+#helloWorld {
+    position: absolute;
+    top:0;
+    left: 10vw;
+    font-size: 6vw;
+}
 
 
   

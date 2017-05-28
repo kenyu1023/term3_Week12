@@ -80,12 +80,41 @@ $(function () {
 //        $(".slowScrollsixth").css({ "transform": "translateY("+ (eScroll /6)+ "px)" });
 //    });
     
-    function parallax(){
+//    function parallax(){
+//        
+//        var box1 = document.getElementById("box1");
+//        
+//        box1.style.top = -(window.pageYOffset / 4) + 'px';
+//    }
+//    window.addEventListener("scroll",parallax,false);
+    
+    $(window).scroll(function(){
+        parallax();
+    });
+    
+    function parallax() {
         
-        var box1 = document.getElementById("box1");
+        var wScroll = $(window).scrollTop();
         
-        box1.style.transform.translateY = -(window.pageYOffset / 3) + 'px';
+        $("#boxA").css("transform","translateY(" + (wScroll*0.00325)+'vw)');
+        
+        $("#boxA-2").css("transform","translateY(" +(wScroll*0.0155)+'vw');
+        
+        $("#helloWorld").css("transform","translateY(" + (wScroll*0.00525)+'vw');
+        
+        $(".whoIam").css("transform","translateY(" + (wScroll*0.00525)+'vw');
+        
+        $(".myWorks").css("transform","translateY(" +(wScroll*0.00755)+'vw');
+        
+        $(".port-left-img").css("transform","translateY(" +(wScroll*0.00355)+'vw');
+        
+        $(".about-desc-para").css("transform","translateY(" +(wScroll*0.00455)+'vw');
+        
+        $(".about-box2").css("transform","translateY(" +(wScroll*0.00955)+'vw');
+        
+        
     }
-    window.addEventListener("scroll",parallax,false);
+    
+    
 });
 

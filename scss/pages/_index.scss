@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     @media screen and (max-width: 39.9375em) {
         /* styles for small only */
 
@@ -82,6 +83,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
         /* styles for medium only */
         padding: 50px;
@@ -91,13 +93,14 @@
         /* styles for large and onward only */
         padding: 80px;
         margin: 100px auto;
-        width: 80%;
+        width: 100%;
     }
     
     
     .about-intro-para {
         text-align: center;
         padding: 50px 20px;
+        z-index: 20;
         
         h3 {
             color: red;
@@ -155,14 +158,16 @@
         left: 40%;
         background-color: lightgray;
         z-index: -10;
+        box-shadow: 5px 5px 5px #888888;
     }
     .about-box2 {
         position: absolute;
-        width: 30vw;
-        height: 30vw;
-        top: 30%;
-        left: 5%;
-        background-color: lightgray;
+        width: 20vw;
+        height: 20vw;
+        top: 0;
+        left: 5vw;
+        background-color: red;
+        box-shadow: 5px 5px 5px #888888;
 
     }
     img {
@@ -216,6 +221,8 @@
         }
         @media screen and (min-width: 64em) {
             /* styles for large and onward only */
+            width:100%;
+            position: relative;
 
 
         h3 {
@@ -234,13 +241,14 @@
             @media screen and (min-width: 64em) {
                 /* styles for large and onward only */  
                 margin-left: auto;
-                //margin-right: 10%;
-                margin-top:20%;
+                margin-right:5vw;
+                //margin-top:15vw;
                 padding:50px;
                 width: 40vw;
                 background-color:white;
                 box-shadow: 5px 5px 5px #888888;
             }
+            
             p {
                 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
                     /* styles for medium only */
@@ -329,7 +337,7 @@
             padding:50px;
             margin-right: auto;
             margin-left: 1%;
-            margin-top:23%;
+            margin-top:10vw;
             background-color: white;
             box-shadow: 5px 5px 5px #888888;
         }
@@ -344,59 +352,59 @@
 
 ///////////////////////////////////////
 ///////// blog section ////////////
-.contact {
-    padding: 50px 30px;
-    background-image:url(../img/blog-white.jpg);
-    background-position: center;
-    background-size: cover;
-    height:100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    img {
-        width:30%;
-        display: block;
-        margin: auto;
-    }
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        /* styles for medium only */
-        padding:100px 50px;
-
-    }
-
-    @media screen and (min-width: 64em) {
-        /* styles for large and onward only */
-        padding:100px 50px;
-        position:relative;
-
-    }
-    .contact-para {
-        align-items : center;
-
-        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-            /* styles for medium only */
-            width:80%;
-            margin: auto;
-        }
-
-        @media screen and (min-width: 64em) {
-            /* styles for large and onward only */
-            width:60%;
-            margin: 100px auto;
-        }
-    }
-
-    h3 {
-        text-align: center;
-    }
-    h5 {
-        text-align: center;
-    }
-}
-
-
-/////////////////////////////////// 
+//.contact {
+//    padding: 50px 30px;
+//    background-image:url(../img/blog-white.jpg);
+//    background-position: center;
+//    background-size: cover;
+//    height:100vh;
+//    display: flex;
+//    align-items: center;
+//    flex-direction: column;
+//
+//    img {
+//        width:30%;
+//        display: block;
+//        margin: auto;
+//    }
+//    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+//        /* styles for medium only */
+//        padding:100px 50px;
+//
+//    }
+//
+//    @media screen and (min-width: 64em) {
+//        /* styles for large and onward only */
+//        padding:100px 50px;
+//        position:relative;
+//
+//    }
+//    .contact-para {
+//        align-items : center;
+//
+//        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+//            /* styles for medium only */
+//            width:80%;
+//            margin: auto;
+//        }
+//
+//        @media screen and (min-width: 64em) {
+//            /* styles for large and onward only */
+//            width:60%;
+//            margin: 100px auto;
+//        }
+//    }
+//
+//    h3 {
+//        text-align: center;
+//    }
+//    h5 {
+//        text-align: center;
+//    }
+//}
+//
+//
+///////////////////////////////////// 
 
 ///// contact section //////////
 

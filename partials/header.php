@@ -12,6 +12,11 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/jquery.barCharts.css">
+        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
+
         <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Arbutus+Slab|Cousine|Cuprum|Merriweather+Sans|Patua+One|Roboto+Condensed|Share+Tech+Mono|Teko" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Francois+One|Karla:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
